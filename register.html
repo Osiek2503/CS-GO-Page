@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="wclasstd=device-wclasstd, initial-scale=1.0"
+    />
+    <title>Klan Non Omnis Moriar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./img/cs-go.jpg" alt="klan non omnis moriar" />
+    </div>
+    <div class="container">
+      <div class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Strona główna</a></li>
+          <li>
+            <a href="http://bit.ly/streamy-csgo" target="_blank"
+              >Streamy z CS:GO</a
+            >
+          </li>
+          <li><a href="register.html">Dołącz do nas!</a></li>
+        </ul>
+
+        <h3>Uwaga! Trwa rekrutacja! Wymagana ranga: Silver.</h3>
+      </div>
+
+      <div class="formularz">
+        <form action="order.php" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <label
+              ><input type="text" name="nick" placeholder="Nick z CS" /></label
+            ><br />
+          </div>
+          <div class="row">
+            <label>Hasło<input type="password" name="haslo" /></label><br />
+          </div>
+          <div class="row">
+            <label>Powtórz hasło<input type="password" name="haslo" /></label>
+          </div>
+
+          <div class="row">
+            <label>Data urodzenia<input type="date" name="dzień" /></label>
+          </div>
+
+          <fieldset>
+            <legend>Płeć</legend>
+            <div>
+              <label><input type="radio" value="1" name="sex" />Kobieta</label>
+            </div>
+            <div>
+              <label
+                ><input
+                  type="radio"
+                  value="2"
+                  name="sex"
+                  checked
+                />Mężczyzna</label
+              >
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <label for="guns">Ulubiona broń</label>
+            <select id="guns" name="guns">
+              <option value="f">Five-Seven</option>
+              <option selected value="d">Desert Eagle</option>
+              <option value="p">PP-Bizon</option>
+              <option value="awp">AWP</option>
+              <option value="m">MP9</option>
+              <option value="a">AK-47</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label for="maps">Ulubione mapy</label>
+            <div style="margin-top: 10px">
+              <select id="maps" name="maps" multiple size="6">
+                <option value="d">Dust II</option>
+                <option value="m">Mirage</option>
+                <option value="c">Cache</option>
+                <option value="i">Inferno</option>
+                <option value="n">Nuke</option>
+                <option value="t">Train</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div><label for="komentarz"></label></div>
+            <textarea
+              name="komentarz"
+              id="komentarz"
+              rows="4"
+              cols="80"
+            ></textarea
+            ><br /><small
+              >Opisz swoją przygodę z CS:GO, dlaczego wybrałeś/aś akurat nasz
+              klan</small
+            >
+          </div>
+
+          <div>
+            <label
+              ><input type="checkbox" name="wyp[]" value="1" checked />Akceptuję
+              regulamin serwisu</label
+            >
+          </div>
+
+          <div>
+            <label
+              ><input type="checkbox" name="wyp[]" value="1" />Wyrażam zgodę na
+              otrzymywanie newslettera</label
+            >
+          </div>
+
+          <div class="row">
+            <input type="submit" value="Zarejestruj się" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h3>
+        Na wojnie się wygrywa albo przegrywa, żyje albo umiera - a decyduje się
+        to w <i>mgnieniu oka</i>. -
+        <a
+          href="https://pl.wikiquote.org/wiki/Douglas_MacArthur"
+          target="_blank"
+          >Douglas MacArthur</a
+        >
+      </h3>
+    </footer>
+  </body>
+</html>
